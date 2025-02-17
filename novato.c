@@ -17,7 +17,7 @@ int main() {
     printf("Navio vertical (tamanho %d) posicionado nas coordenadas:\n", tamanho_vertical);
     for (int i = 0; i < tamanho_vertical; i++) {
         if (y + i < 5) { 
-            printf("(%d, %d) -> Valor: %d\n", y + i, x, TABULEIRO[y + i][x]);
+            printf("(%d, %d) - Valor: %d\n", y + i, x, TABULEIRO[y + i][x]);
         } else {
             printf("Erro: O navio está fora dos limites do tabuleiro.\n");
             break;
@@ -27,7 +27,7 @@ int main() {
     printf("\nNavio horizontal (tamanho %d) posicionado nas coordenadas:\n", tamanho_horizontal);
     for (int i = 0; i < tamanho_horizontal; i++) {
         if (x + i < 5) { 
-            printf("(%d, %d) -> Valor: %d\n", y, x + i, TABULEIRO[y][x + i]);
+            printf("(%d, %d) - Valor: %d\n", y, x + i, TABULEIRO[y][x + i]);
         } else {
             printf("Erro: O navio está fora dos limites do tabuleiro.\n");
             break;
